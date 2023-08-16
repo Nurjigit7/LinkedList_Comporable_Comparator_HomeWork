@@ -13,7 +13,9 @@ public class Main {
         }
         System.out.println(arrayList+"озгорудон алдын -arrayList");
         System.out.println(linkedList+"озгорудон алдын -linkedList ");
-
+        System.out.println(massiv+"озгорудон алдын");
+        Arrays.sort(massiv);
+        System.out.println(sort(massiv)+"massiv");
         Collections.sort(arrayList);
         System.out.println(sortBy(arrayList)+"arrayList");
         Collections.sort(linkedList);
