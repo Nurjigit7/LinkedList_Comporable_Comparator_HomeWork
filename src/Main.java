@@ -3,19 +3,19 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
         Random random = new Random();
-        int[] massiv = new int[5];
+        int[] massiv = new int[10];
         ArrayList<Integer> arrayList = new ArrayList<>();
         LinkedList<Integer> linkedList = new LinkedList<>();
-        for (int i = 0; i < massiv.length; i++) {
+        for (int i = 0; i < 10; i++) {
             massiv[i] = random.nextInt( 2);
             arrayList.add(random.nextInt(2));
             linkedList.add(random.nextInt(2));
         }
         System.out.println(arrayList+"озгорудон алдын -arrayList");
         System.out.println(linkedList+"озгорудон алдын -linkedList ");
-        System.out.println(massiv+"озгорудон алдын");
+        System.out.println(Arrays.toString(massiv)+"озгорудон алдын");
         Arrays.sort(massiv);
-        System.out.println(sort(massiv)+"massiv");
+        System.out.println(Arrays.toString(massiv)+"massiv");
         Collections.sort(arrayList);
         System.out.println(sortBy(arrayList)+"arrayList");
         Collections.sort(linkedList);
